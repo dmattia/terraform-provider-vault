@@ -50,6 +50,9 @@ default, this should be prefixed with `secret/`. Reading from other backends
 with this data source is possible; consult each backend's documentation
 to see which endpoints support the `GET` method.
 
+* `version` - (Optional) The version of the secret to read. This is currently
+only supported by the v2 secret store.
+
 ## Required Vault Capabilities
 
 Use of this resource requires the `read` capability on the given path.
